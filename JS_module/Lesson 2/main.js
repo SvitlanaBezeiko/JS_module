@@ -157,3 +157,5 @@ switch (dayNumber) {
         schedule = 'Invalid day number. Please enter a number between 1 and 7.';
 }
 console.log(schedule);
+
+
