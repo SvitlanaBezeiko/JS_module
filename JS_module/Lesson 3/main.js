@@ -1,6 +1,6 @@
 // #y7crMeFwHcS
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
-let products = [
+let goods = [
     {id: 1, name: "Смартфон Samsung Galaxy S23", category: "Смартфони", price: 29999},
     {id: 2, name: "Ноутбук Apple MacBook Air M2", category: "Ноутбуки", price: 49999},
     {id: 3, name: "Навушники Sony WH-1000XM5", category: "Аудіо", price: 12999},
@@ -13,9 +13,9 @@ let products = [
     {id: 10, name: "Електросамокат Xiaomi Mi Scooter Pro 2", category: "Транспорт", price: 20999},
 ];
 
-for (let i = 0; i < products.length; i++) {
-    const product = products[i];
-    document.write(`<div><h3>${product.name} - ${product.category} - ${product.price} UAH </h3></div>`)
+for (let i = 0; i < goods.length; i++) {
+    const good = goods[i];
+    document.write(`<div><h3>${good.name} - ${good.category} - ${good.price} UAH </h3></div>`)
 }
 
 // #TYj7ncx
