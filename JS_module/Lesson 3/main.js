@@ -120,5 +120,4 @@ for (let user of users) {
     if (user.age > 30){
         console.log(user);
     }
-
 }
