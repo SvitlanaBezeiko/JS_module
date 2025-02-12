@@ -53,15 +53,20 @@ writeText(`Hello world1!`, `Hello Okten!`);
 
 // #hOL6126
 // - створити функцію яка створює ul з трьома елементами li та виводить його через document.write. Текст li задати через аргумент всім однаковий
-function list(){
+function list(text){
     document.write(
         `
 <ul>
-    <li>asd</li>
-    <li></li>
-    <li></li>
+    <li>${text}</li>
+    <li>${text}</li>
+    <li>${text}</li>    
 </ul>
 `
     )
 }
-list()
+list('Hello Okten!')
+
+// #gEFoxMMO
+// - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
+
+function listofArray()
