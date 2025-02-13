@@ -68,5 +68,20 @@ list('Hello Okten!')
 
 // #gEFoxMMO
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
+document.write(`<ul>`);
+function listofArray(elements){
+    for (const element of elements) {
+        document.write(
+            `
+            <li>${element}</li>
+`
+        )
 
-function listofArray()
+    }
+}
+document.write(`</ul>`);
+
+listofArray([5, 10, 20, true, 'apple'])
+
+// #bovDJDTIjt
+// // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
