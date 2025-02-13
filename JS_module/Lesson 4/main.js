@@ -85,3 +85,65 @@ listofArray([5, 10, 20, true, 'apple'])
 
 // #bovDJDTIjt
 // // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+function blockofObjects(users){
+    for (const user of users) {
+        document.write(`
+        <div> ${user.id} ${user.name} ${user.age}
+        </div>
+        `);
+    }
+}
+blockofObjects([
+    {id: 1, name: 'olya', age: 27},
+    {id:2, name:'Yura', age:35},
+    {id:3, name:'Nika', age:20},
+    {id:4, name:'Kolya', age:43},
+]);
+
+// #pghbnSB
+// - створити функцію яка повертає найменьше число з масиву
+function arrayMinValue(numbers){
+    let min = numbers[0];
+    for (const number of numbers) {
+        if (number < min) {
+            min = number
+        }
+
+    }
+    return min;
+}
+console.log(arrayMinValue([10, 1, 2, 0, -10, 100]));
+
+// #EKRNVPM
+// - створити функцію sum(arr) яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
+function sum(arr) {
+    let total = 0;
+    for (let number of arr) {
+        total += number; //( += ) добавляет значение правого операнда к переменной и присваивает переменной результат
+    }
+    return total;
+}
+
+console.log(sum([1, 2, 10]));
+
+// #kpsbSQCt2Lf
+// - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відповідних індексах
+//Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+function swap(arr, i1, i2){
+let temp = arr[i1];
+arr[i1] = arr[i2];
+arr[i2] = temp;
+
+return arr;
+}
+console.log(swap([11,22,33,44],0,1));
+
+// #mkGDenYnNjn
+// - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+// Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD')
+function exchange(sumUAH,currencyValues,exchangeCurrency){
+    let chosenCurrency;
+    for (const item of currencyValues) {
+    choosenCurrency
+    }
+}
