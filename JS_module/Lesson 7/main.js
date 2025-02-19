@@ -168,8 +168,39 @@ console.log(car2);
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
-//
-//
-//
+
+class Cinderella{
+
+    constructor(name, age, footSize) {
+        this.name = name;
+        this.age = age;
+        this.footSize = footSize;
+    }
+}
+class Prince{
+
+    constructor(name, age, foundShoesSize) {
+        this.name = name;
+        this.age = age;
+        this.foundShoesSize = foundShoesSize;
+    }
+}
+
+const cinderellas = [
+    new Cinderella("Анна", 20, 35),
+    new Cinderella("Олена", 21, 36),
+    new Cinderella("Катерина", 22, 37),
+    new Cinderella("Марія", 23, 38),
+    new Cinderella("Ірина", 24, 35),
+    new Cinderella("Юлія", 25, 36),
+    new Cinderella("Оксана", 26, 37),
+    new Cinderella("Наталія", 27, 38),
+    new Cinderella("Дарина", 28, 39),
+    new Cinderella("Софія", 29, 40)
+];
+
+const prince = new Prince("Олександр", 30, 37);
+
+
 // #gsKLAsNWM
 // *Через Array.prototype. створити власний foreach, filter
