@@ -166,7 +166,7 @@ console.log(car2);
 // #zg6Fifnqig
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-//     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
+//     За допомоги циклу знайти яка попел юшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
 class Cinderella{
@@ -187,20 +187,45 @@ class Prince{
 }
 
 const cinderellas = [
-    new Cinderella("Анна", 20, 35),
-    new Cinderella("Олена", 21, 36),
-    new Cinderella("Катерина", 22, 37),
-    new Cinderella("Марія", 23, 38),
+    new Cinderella("Юлія", 15, 31),
+    new Cinderella("Олена", 15, 32),
+    new Cinderella("Катерина", 16, 33),
+    new Cinderella("Марія", 17, 34),
     new Cinderella("Ірина", 24, 35),
     new Cinderella("Юлія", 25, 36),
     new Cinderella("Оксана", 26, 37),
     new Cinderella("Наталія", 27, 38),
-    new Cinderella("Дарина", 28, 39),
+    new Cinderella("Юлія", 28, 39),
     new Cinderella("Софія", 29, 40)
 ];
 
 const prince = new Prince("Олександр", 30, 37);
 
+for (const cinderella of cinderellas) {
+   if (cinderellas.footSize === prince.foundShoesSize) {
+       prince.wife = cinderella;
+   }
+}
 
 // #gsKLAsNWM
 // *Через Array.prototype. створити власний foreach, filter
+
+Array.prototype.myFilter = function(callback){
+    for (const adult of this) {
+        if(adult.age > 18){
+            callback(adult);
+        }
+    }
+}
+cinderellas.myFilter((adult => console.log(adult)));
+
+Array.prototype.myForEach = function(){
+    const arr = [];
+    for (const item of this) {
+        if (item.name === `Юлія`){
+            arr.push(item);
+        }
+    }
+    return arr;
+}
+console.log(cinderellas.myForEach());
